@@ -48,4 +48,17 @@ DELIMITER ;
 -- DETERMINISTIC indica que siempre devuelve el mismo resultado con los mismos parámetros.
 
 ```
-hola
+
+### 🔹 Crear un Procedimiento almacenado
+```sql
+CREATE PROCEDURE sp_obtener_nombre (
+  IN p_id INT,
+  OUT p_nombre VARCHAR(100)
+)
+BEGIN
+  SELECT nombre INTO p_nombre
+  FROM clientes
+  WHERE id = p_id;
+END
+
+```
