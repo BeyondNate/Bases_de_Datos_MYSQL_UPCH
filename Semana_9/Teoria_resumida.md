@@ -41,3 +41,8 @@ BEGIN
   RETURN resultado;
 END //
 DELIMITER ;
+
+
+-- Usa RETURNS para especificar el tipo de retorno.
+-- Usa RETURN para devolver el valor.
+-- DETERMINISTIC indica que siempre devuelve el mismo resultado con los mismos parámetros.
